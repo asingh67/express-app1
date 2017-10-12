@@ -1,4 +1,26 @@
 {{>header}}
-<h1>{{title}}</h1>
-{{>footer}}
 
+<div class="container">
+    <h1>{{title}}</h1>
+
+    <form>
+        <div class="form-group">
+            <label for="EmailField">Email address</label>
+            <input type="email" class="form-control" id="EmailField" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="PasswordField">Password</label>
+            <input type="password" class="form-control" id="PasswordField" placeholder="Password">
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input"> Check me out
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<!-- /container -->
+
+{{>footer}}
